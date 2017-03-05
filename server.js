@@ -6,7 +6,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/ui/reg', function (req, res) {
+app.get('/reg', function (req, res) {
     res.send('This is a response for reg pagw!');
 });
 app.get('/ui/style.css', function (req, res) {
